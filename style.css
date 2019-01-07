@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css?family=Alef");
+html {
+  overflow: hidden;
+}
+
+.love {
+  color: red;
+  font-size: 14px;
+}
+
+a, a:link, a:visited, a:active {
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+  background: #100a1c;
+  background-image: radial-gradient(50% 30% ellipse at center top, #201e40 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(60% 50% ellipse at center bottom, #261226 0%, #100a1c 100%);
+  background-attachment: fixed;
+  margin: 0px auto;
+  font-family: 'Alef', sans-serif;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: auto;
+  background: radial-gradient(50% 30% ellipse at center top, #0a324d 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(60% 50% ellipse at center bottom, #031c2c 30%, #100a1c 100%);
+  padding: 20px 0px 0px 0px;
+  text-align: center;
+  color: #fff;
+}
+
+#footer span#copy {
+  display: block;
+  padding: 7px;
+}
+
+#footer span#copy > a {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#footer span#copy > a:hover {
+  color: orange;
+}
+
+#footer .icon {
+  font-size: 1.4em;
+  margin-left: 25px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+#footer .icon:first-child {
+  margin: 0;
+}
+
+#footer .icon:hover {
+  background: -webkit-linear-gradient(orange, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transform: rotate(360deg) scale(1.7);
+          transform: rotate(360deg) scale(1.7);
+}
+
+#container {
+  width: 100vw;
+  height: 100vh;
+}
+
+#container #title {
+  width: 320px;
+  height: auto;
+  text-align: center;
+  color: #fffefe;
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#container #title h1 {
+  font-size: 4em;
+  padding: 0;
+  margin: 0;
+  line-height: 50px;
+  background: -webkit-linear-gradient(orange, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#container #title h1:hover {
+  -webkit-transform: skew(25deg);
+          transform: skew(25deg);
+}
+
+#container #title span {
+  padding: 0;
+  padding-top: 5px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#container #title span:hover {
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+
+#cac {
+  width: 320px;
+  overflow: hidden;
+  height: auto;
+  padding: 10px;
+  background: radial-gradient(50% 30% ellipse at center top, #201e40 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(60% 50% ellipse at center bottom, #261226 0%, #100a1c 100%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+#cac p#result {
+  width: 67%;
+  height: auto;
+  min-height: 35px;
+  overflow: auto;
+  padding: 19px 20px;
+  font-size: 25px;
+  text-align: right;
+  color: #a09e9e;
+  margin: 0;
+  background: radial-gradient(ellipse at center top, white, #cecece), radial-gradient(ellipse at center bottom, white, gray);
+  border-top-right-radius: 7px;
+}
+
+#cac span#clear {
+  width: 20%;
+  height: auto;
+  float: left;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  padding: 25px 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#201e40), to(#100a1c));
+  background: linear-gradient(to bottom, #201e40, #100a1c);
+  border-top-left-radius: 7px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#cac span#clear:hover {
+  background: -webkit-gradient(linear, right top, left top, from(#201e40), to(#100a1c));
+  background: linear-gradient(to left, #201e40, #100a1c);
+}
+
+#cac ul#button {
+  overflow: hidden;
+  font-size: 15px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+#cac ul#button li {
+  float: left;
+  width: 24.82%;
+  list-style: none;
+  line-height: 80px;
+  text-align: center;
+  background: rgba(42, 50, 113, 0.28);
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  cursor: pointer;
+}
+
+#cac ul#button li:hover {
+  background: #201e40;
+}
+
+#cac ul#button li:active {
+  -webkit-box-shadow: inset 0px 0px 3px 5px #2b2758;
+          box-shadow: inset 0px 0px 3px 5px #2b2758;
+}
+
+#cac ul#button li:nth-child(3) {
+  background: #201e40;
+}
+
+#cac ul#button li:nth-child(4n) {
+  background: -webkit-gradient(linear, left top, left bottom, from(orange), to(red));
+  background: linear-gradient(to bottom, orange, red);
+}
+
+#cac ul#button li:nth-child(4n):hover {
+  background: -webkit-gradient(linear, left top, right top, from(orange), to(red));
+  background: linear-gradient(to right, orange, red);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#cac ul#button li:nth-child(4n):active {
+  -webkit-box-shadow: inset 0px 0px 3px 5px red;
+          box-shadow: inset 0px 0px 3px 5px red;
+}
+/*# sourceMappingURL=style.css.map */

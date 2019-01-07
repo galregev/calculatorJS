@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=Alef');
+html {overflow: hidden;}
+.love{color: red; font-size: 14px;}
+a, a:link, a:visited, a:active {
+    text-decoration: none;
+    color: #fff;
+}
+
+body {    
+    background: #100a1c;
+    background-image:
+      radial-gradient(50% 30% ellipse at center top, #201e40 0%, rgba(0, 0, 0, 0) 100%),
+      radial-gradient(60% 50% ellipse at center bottom, #261226 0%, #100a1c 100%);
+    background-attachment: fixed;
+    margin: 0px auto;
+    font-family: 'Alef', sans-serif;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: auto;
+    background: 
+        radial-gradient(50% 30% ellipse at center top, #0a324d 0%, rgba(0,0,0,0) 100%),
+        radial-gradient(60% 50% ellipse at center bottom, #031c2c 30%, #100a1c 100%);
+    padding: 20px 0px 0px 0px;
+    text-align: center;
+    color: #fff;
+
+    span#copy {
+        display: block;
+        padding: 7px;
+
+        & > a {
+            transition: all 1s;
+        }
+
+        & > a:hover {
+            color: orange;
+        }
+    }
+
+    .icon {
+        font-size: 1.4em;
+        margin-left: 25px;
+        transition: all 0.2s;
+
+        &:first-child {
+            margin: 0;
+        }
+
+        &:hover {
+            background: -webkit-linear-gradient(orange, red);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transform: rotate(360deg) scale(1.7);
+        }
+
+    }
+
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+
+    #title {
+        width: 320px;
+        height: auto;
+        text-align: center;
+        color: rgb(255, 254, 254);
+        position: absolute;
+        top: 18%;
+        left: 50%;
+        transform: translateX(-50%);
+        
+        h1 {
+            font-size: 4em;
+            padding: 0;
+            margin: 0;
+            line-height: 50px;
+            background: -webkit-linear-gradient(orange, red);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: all 0.3s;
+
+            &:hover {
+                transform: skew(25deg);
+            }
+
+        }
+
+        span {
+            padding: 0;
+            padding-top: 5px;
+            
+            transition: all 0.3s;
+
+            &:hover {
+                filter: blur(2px);
+            }
+
+        }
+        
+    }
+
+}
+
+#cac {
+    width: 320px;
+    overflow: hidden;
+    height: auto;
+    padding: 10px;
+    background:       
+    radial-gradient(50% 30% ellipse at center top, #201e40 0%, rgba(0,0,0,0) 100%),
+    radial-gradient(60% 50% ellipse at center bottom, #261226 0%, #100a1c 100%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    box-shadow: 0px 5px 10px rgba($color: #000000, $alpha: 0.5);
+    border-radius: 5px;
+
+    p#result {
+        width: 67%;
+        height: auto;
+        min-height: 35px;
+        overflow: auto;
+        padding: 19px 20px;
+        font-size: 25px;
+        text-align: right;
+        color: #a09e9e;
+        margin: 0;
+        background: radial-gradient(ellipse at center top, white, rgb(206, 206, 206)),
+                    radial-gradient(ellipse at center bottom, white, gray);
+        border-top-right-radius: 7px;
+    }
+
+    // The Clear button.
+    span#clear {
+        width: 20%;
+        height: auto;
+        float: left;
+        cursor: pointer;
+        text-align: center;
+        color: #fff;
+        padding: 25px 0;
+        background: linear-gradient(to bottom, #201e40, #100a1c);
+        border-top-left-radius: 7px;
+        transition: all 1s;
+
+            &:hover {
+                background: linear-gradient(to left, #201e40, #100a1c);
+            }
+    }
+
+    ul#button {
+        overflow:hidden;
+        font-size: 15px;
+        color: #fff;
+        margin: 0; padding: 0;
+
+        & li { 
+            float: left;
+            width: 24.82%;
+            list-style: none;
+            line-height: 80px;
+            text-align: center;
+            background: rgba(42,50,113, .28);
+            transition: all 0.1s;
+            cursor: pointer;
+
+            &:hover {
+                background: #201e40;
+            }
+
+            &:active {
+                box-shadow: inset 0px 0px 3px 5px #2b2758;
+            }
+
+            &:nth-child(3) {
+                background: #201e40;
+            }
+
+            &:nth-child(4n) {
+                background: linear-gradient(to bottom, orange, red);
+
+                &:hover {
+                    background: linear-gradient(to right, orange, red);
+                    transform: scale(1.1);
+                }
+
+                &:active {
+                    box-shadow: inset 0px 0px 3px 5px red;
+                }
+
+            }
+
+        }
+
+    }
+
+}
